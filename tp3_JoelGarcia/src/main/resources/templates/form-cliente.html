@@ -1,10 +1,135 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Registro</title>
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+</head>
+<body>
+	<header id="header">
+		<h1>Registro de usuario</h1>
+	</header>
 	
-	</body>
+	<nav class="nav-bar">
+		<a class="nav-link">Inicio</a>
+	</nav>
+
+	<main class="main-content">
+	<section class="form-section">
+		<form method="post">
+			<!-- DNI -->
+			<label for="dni">DNI:</label> 
+			<input type="number" id="dni" name="dni" required><br>
+
+			<!-- Nombres -->
+			<label for="nombres">Nombres:</label> 
+			<input type="text" id="nombres" name="nombres" required><br>
+
+			<!-- Apellidos -->
+			<label for="apellidos">Apellidos:</label> 
+			<input type="text" id="apellidos" name="apellidos" required><br>
+
+			<!-- Fecha de Nacimiento -->
+			<label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+			<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br>
+
+			<!-- Género -->
+			<label>Género:</label>
+			<input type="radio" id="gender-male" name="gender" value="male" required> 
+			<label for="gender-male">Masculino</label> 
+			<input type="radio" id="gender-female" name="gender" value="female" required> 
+			<label for="gender-female">Femenino</label> 
+			<input type="radio"	id="gender-x" name="gender" value="x" required>
+			<label	for="gender-x">Otros</label><br>
+
+			<!-- Correo Electrónico -->
+			<label for="email">Correo Electrónico:</label> 
+			<input type="email" id="email" name="email" required><br>
+
+			<!-- Domicilio -->
+			<label for="domicilio">Domicilio:</label>
+			<input type="text" id="domicilio" name="domicilio" required><br>
+
+			<!-- Provincia -->
+			<label for="province">Provincia:</label>
+			<select
+				id="province" name="province" required>
+				<option value="">Seleccione una provincia</option>
+				<option value="san-salvador">San Salvador de Jujuy</option>
+				<option value="san-pedro">San Pedro</option>
+				<option value="el-carmen">El Carmen</option>
+				<option value="palpala">Palpalá</option>
+				<option value="perico">Perico</option>
+				<option value="libertador">Libertador General San Martín</option>
+				<option value="humahuaca">Humahuaca</option>
+				<option value="la-quiaca">La Quiaca</option>
+			</select><br>
+
+			<!-- Número de Teléfono Celular -->
+			<label for="telefono">Número de Teléfono Celular:</label>
+			<input type="tel" id="telefono" name="telefono"><br> 
+			
+			<!-- Categorias de interes -->
+			<label>Categoría de interés:</label><br>
+			<input type="checkbox" id="categoria1" name="categorias" value="Entretenimiento">
+			<label for="categoria1" class="categoria">Entretenimiento</label><br>
+			<input type="checkbox" id="categoria2" name="categorias" value="Tecnología">
+			<label for="categoria2"class="categoria">Tecnología</label><br>
+			<input type="checkbox" id="categoria3" name="categorias" value="Salud">
+			<label for="categoria3" class="categoria">Salud</label><br>
+			
+			<!-- Sugerencias para la empresa -->
+			<label for="sugerencias">Sugerencias para la empresa:</label><br>
+			<textarea id="sugerencias" name="sugerencias" rows="4" cols=50></textarea>	<br>
+			
+			<!-- Password -->
+			<label for="password">Contraseña:</label>
+			<input type="password" id="password" name="password" required><br>
+				
+			<!-- Aceptación de Términos y Condiciones -->
+	        <input type="checkbox" id="terminos" name="terminos" required>
+	        <label for="terminos">Acepto los términos y condiciones.</label><br>
+	
+	        <!-- Aceptación de Información Relativa a la Empresa -->
+	        <input type="checkbox" id="informacion" name="informacion">
+	        <label for="informacion">Acepto recibir información relativa a la empresa.</label><br>
+	
+	        <!-- Botón de Envío -->
+	        <input type="submit" value="Enviar" class=boton-enviar>	
+		</form>
+	</section>	
+	
+	<aside class=extra-section>
+		<h1>Ayuda</h1>
+		<img src="../static/images/bookIco.png" alt="Icono de ayuda" class=aside-image/>:
+		<ul class="no-bullets">
+			<li><a href="#" class="a-link">Cómo llenar un formulario en línea</a></li>
+			<li><a href="#" class="a-link">Preguntas frecuentes</a></li>
+			<li><a href="#" class="a-link">Horarios de atención</a></li>
+			<li><a href="#" class="a-link">Ubicación</a></li>
+			<li><a href="#" class="a-link">Contacta con soporte</a></li>
+			<li><a href="#" class="a-link">Guía de nuestros servicios</a></li>
+			<li><a href="#" class="a-link">Términos y condiciones</a></li>
+		</ul>
+	</aside>
+	
+	</main>
+
+	<footer id="footer">
+		<section class="left">
+			<p>&copy; 2024 Programación Visual</p>
+		</section>
+		<section class="right">
+			<a href="https://www.facebook.com">
+			<img src="../static/images/facebook.png">
+			</a>
+			<a href="https://www.x.com">
+			<img src="../static/images/twitter.png">
+			</a>
+			<a href="https://www.instagram.com">
+			<img src="../static/images/instagram.png">
+			</a>
+		</section>
+		
+	</footer>
+</body>
 </html>
